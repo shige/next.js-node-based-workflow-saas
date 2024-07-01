@@ -8,6 +8,7 @@ import ReactFlow, {
 	useNodesState,
 	useEdgesState,
 	addEdge,
+	type OnConnect,
 } from "reactflow";
 
 import "reactflow/dist/style.css";
@@ -22,7 +23,7 @@ export default function App() {
 	const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
 	const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 
-	const onConnect = useCallback(
+	const onConnect: OnConnect = useCallback(
 		(params) => setEdges((eds) => addEdge(params, eds)),
 		[setEdges],
 	);
