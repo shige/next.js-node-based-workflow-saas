@@ -37,3 +37,6 @@ next-env.d.ts
 
 # trigger.dev
 .trigger
+
+# turborepo - https://turbo.build/repo/docs/getting-started/add-to-existing-repository#edit-gitignore
+.turbo
