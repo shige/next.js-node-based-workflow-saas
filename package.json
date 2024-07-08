@@ -2,8 +2,9 @@
 	"name": "next-nbw-saas",
 	"version": "0.1.0",
 	"private": true,
+	"packageManager": "bun@1.1.17",
 	"scripts": {
-		"dev": "next dev",
+		"dev": "turbo dev:next.js dev:trigger.dev",
 		"dev:next.js": "next dev",
 		"dev:trigger.dev": "bunx trigger.dev@beta dev",
 		"build": "next build",
