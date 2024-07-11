@@ -8,7 +8,7 @@ import {
 } from "drizzle-orm/pg-core";
 import { drizzle } from "drizzle-orm/vercel-postgres";
 
-export const UsersTable = pgTable(
+export const usersTable = pgTable(
 	"users",
 	{
 		id: serial("id").primaryKey(),
